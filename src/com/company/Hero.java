@@ -1,8 +1,12 @@
 package com.company;
 
-public  class Hero implements HavingSuperAbility {
+public abstract class Hero implements HavingSuperAbility {
     private int health;
     private int damage;
+
+    public Hero() {
+
+    }
 
     public int getHealth() {
         return health;
@@ -19,9 +23,9 @@ public  class Hero implements HavingSuperAbility {
     public void setDamage(int damage) {
         this.damage = damage;}
 
-    @Override
-    public void applySuperAbility() {
 
+    protected String info() {
+        return null;
     }
 }
 
